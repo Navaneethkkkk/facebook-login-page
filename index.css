@@ -1,134 +1,146 @@
-body {
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: arial, sans-serif;
 }
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
 .facebook-page {
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  width: 100%;
-  background-color: white;
 }
 
-.facebook-page .container {
-  position: relative;
+.container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
-}
-.container .text-box {
-  display: flex;
-  flex-direction: column;
-}
-.logo {
-  font-size: 3.9rem;
-  color: #1877f2;
-}
-.text-box p {
-  font-size: 20px;
-  font-weight: 500;
-
-  margin-bottom: 5rem;
-  max-width: 400px;
-}
-.login form {
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
+  width: 980px;
+  max-width: 100%;
   padding: 20px;
-  width: 396px;
+}
 
-  border-radius: 9px;
-  box-shadow: 0 3px 8px;
+.text-box {
+  max-width: 500px;
 }
-form input {
-  border: 1px solid rgb(72, 67, 67);
-  outline: none;
-  padding: 8px 16px;
-  margin-bottom: 12px;
-  font-size: 1rem;
-  border-radius: 5px;
-}
-form input:focus {
-  border: 1px solid #1877f2;
-}
-form .login {
-  outline: none;
-  margin: none;
-  padding: 8px 16px;
-  border-radius: 6px;
-  background-color: #1877f2;
-  color: white;
-  font-size: 1.1rem;
-  border: 0;
-}
-form .login:hover {
-  cursor: pointer;
-}
-form a {
-  text-decoration: none;
-  text-align: center;
-  font-size: 0.9rem;
+
+.logo {
   color: #1877f2;
-  padding-top: 12px;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
-form hr {
-  margin: 0.7rem;
+
+.text-box p {
+  font-size: 1.5rem;
+  line-height: 1.5;
 }
-.create-account {
-  outline: none;
-  border: none;
-  padding: 8px 16px;
-  background-color: rgb(73, 221, 60);
-  border-radius: 6px;
+
+.login form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 380px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  padding: 14px 16px;
   font-size: 1rem;
-  color: #fff;
-  width: 60%;
-  margin: auto;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  margin-bottom: 12px;
 }
+
+form input:focus {
+  border-color: #1877f2;
+  outline: none;
+}
+
+form .login {
+  background-color: #1877f2;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 6px;
+  padding: 14px 0;
+  cursor: pointer;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+form .login:hover {
+  background-color: #166fe5;
+}
+
+form a {
+  color: #1877f2;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 12px 0;
+}
+
+form a:hover {
+  text-decoration: underline;
+}
+
+form hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #dddfe2;
+}
+
+.create-account {
+  background-color: #42b72a;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  padding: 14px 0;
+  width: 60%;
+  margin: 0 auto;
+  cursor: pointer;
+  font-weight: bold;
+}
+
 .create-account:hover {
+  background-color: #36a420;
+}
+
+.login p {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login p span {
+  font-weight: bold;
+  color: #000;
   cursor: pointer;
 }
-.login p {
-  margin-top: 20px;
-  font-size: 0.8rem;
-  text-align: center;
+
+.login p span:hover {
+  text-decoration: underline;
 }
-.login span {
-  font-weight: 550;
-}
-@media (max-width: 640px) {
+
+@media (max-width: 768px) {
   .container {
-    display: flex;
     flex-direction: column;
-  }
-  .text-box {
-    margin: 0;
+    align-items: center;
     text-align: center;
   }
-  form {
-    width: 300px;
-    height: fit-content;
-  }
-  form .login {
-    font-size: 1.5rem;
-  }
-  form a {
-    font-size: 0.9rem;
-  }
-  form .create-account {
-    font-size: 1.1rem;
-  }
-  form input {
-    margin-bottom: 7px;
-    font-size: 1.1rem;
-  }
-  .login p {
-    font-size: 1rem;
+
+  .text-box {
+    margin-bottom: 30px;
   }
 }
+
